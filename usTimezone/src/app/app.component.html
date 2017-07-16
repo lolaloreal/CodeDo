@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>{{title}}</h1>
+  <hr>
+  <button (click)="timeZone('PST')" [ngClass]="{'clicked': displayTime === 'PST'}">PST</button>
+  <button (click)="timeZone('MST')" [ngClass]="{'clicked': displayTime === 'MST'}">MST</button>
+  <button (click)="timeZone('CST')" [ngClass]="{'clicked': displayTime === 'CST'}">CST</button>
+  <button (click)="timeZone('EST')" [ngClass]="{'clicked': displayTime === 'EST'}">EST</button>
+  <button (click)='timeZone()'>CLEAR</button>
+
+  <hr>
+<img src="https://www.tenstickers.co.uk/wall-stickers/img/preview/comic-clock-laptop-sticker-2603.png" alt="">
+<br>
+  <h2>{{time | date: 'medium'}}</h2>
+  <br>
+/////////
+<!-- <button [ngClass]="{'on': lastTimeZone === 'PST'}" (click)='changeTime("PST")'>PST</button>
+<button [ngClass]="{'on': lastTimeZone === 'MST'}" (click)='changeTime("MST")'>MST</button>
+<button [ngClass]="{'on': lastTimeZone === 'CST'}" (click)='changeTime("CST")'>CST</button>
+<button [ngClass]="{'on': lastTimeZone === 'EST'}" (click)='changeTime("EST")'>EST</button>
+<button (click)='changeTime()'>Clear</button> -->
