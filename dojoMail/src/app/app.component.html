@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>{{title}}!</h1>
+  <hr>
+    <table>
+        <tr>
+            <th>Email</th>
+            <th>Importance</th>
+            <th width=100px;>Subject</th>
+            <th>Content</th>
+        </tr>
+        <br>
+        <tr *ngFor="let data of mailArray">
+            <td>{{data.email | lowercase}}</td>
+            <td *ngIf="data.importance">High</td>
+            <td *ngIf="!data.importance">Low</td>
+            <td>{{data.subject}}</td>
+            <td>{{data.content}}</td>
+        </tr>
+    </table>
+    <br>
+    <img src="http://img08.deviantart.net/12b3/i/2012/320/9/e/eagle_2_png_by_lg_design-d5l64la.png" alt="">
+</div>
