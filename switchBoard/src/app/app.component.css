@@ -1,0 +1,25 @@
+h1{
+    font-family: garamond, serif;
+    color: #2d2d2d;
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px;
+}
+
+div.switch{
+    display: inline-block;
+}
+
+button{
+   background: radial-gradient(circle, #BF1119, #7F0B11, #400608);
+   /*background-color: #2d2d2d;*/
+   color: #fff;
+   border: 0px;
+   padding: 20px;
+   margin: 10px;
+   font-size: 12px;
+}
+
+button.clicked{
+    background: radial-gradient(circle, #4A7F46, #347F17, #1A400C);
+}
