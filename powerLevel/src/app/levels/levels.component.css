@@ -1,0 +1,28 @@
+.sections{
+    display: inline-block;
+    background-color: #FEF9E8;
+    width: 280px;
+    height: 150px;
+    margin: 15px 5px 15px 10px;
+    border: 2px solid #000;
+    padding: 0px 10px 5px 10px;
+    vertical-align: top;
+    /*text-align: center;*/
+}
+
+.powerButton{
+    display: inline-block;
+    position: absolute;
+    bottom: 640px;
+    left: 350px;
+}
+
+button{
+    margin-left: 10px;
+    padding: 10px 30px;
+    box-shadow: 2px 3px 1px #3F403C;
+}
+
+input{
+    font-size: 20px;
+}
