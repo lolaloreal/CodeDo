@@ -1,0 +1,32 @@
+.add-quote{
+    border: 1px solid #B2B2B2;
+}
+
+h1{
+    padding: 10px;
+}
+
+.formInfo{
+    margin: 20px 0px 10px 20px;
+    padding: 15px;
+
+}
+
+
+p{
+    display: inline-block;
+    font-weight: bold;
+}
+
+.validations{
+    /*background-color: #C3DDE6;*/
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    right: 450px;
+    top: 220px;
+}
+
+button.formInfo{
+    margin: 0px 0px 10px 350px;
+}

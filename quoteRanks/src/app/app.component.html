@@ -1,0 +1,5 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="wrapper">
+<app-add-quote [quotes]="quotes" (createQuoteEvent)="createQuote($event)"></app-add-quote>
+<app-quote-list [quotes]="quotes" (deleteQuoteEvent)="deleteQuote($event)"></app-quote-list>
+</div>

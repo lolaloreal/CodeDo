@@ -1,0 +1,54 @@
+.quote-list{
+    border: 1px solid #B2B2B2;
+    padding: 10px;
+}
+
+h1{
+    padding: 10px;
+}
+
+
+div.quote {
+    display: inline-block;
+    margin: 20px 10px 0px 320px;
+    width: 600px;
+    border: 1px solid #B2B2B2;
+    padding: 10px 2px 10px 10px;
+}
+div.content {
+    width: 350px;
+    display: inline-block
+}
+div.rating {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+div.buttons {
+    vertical-align: top;
+    width: 90px;
+    display: inline-block;
+}
+div.buttons {
+    text-align: center;
+}
+div.buttons button {
+    display: block;
+    width: 95px;
+    padding: 5px;
+}
+
+div.buttons button.up {
+    background-color: #4E6B1F;
+    color: white;
+}
+div.buttons button.down {
+    background-color: #FF5F2D;
+    color: white;
+}
+div.buttons button.delete {
+    background-color: black;
+    color: white;
+
+}
