@@ -1,0 +1,55 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="wrapper">
+
+  <h1>
+    {{title}}
+  </h1>
+
+  <div class="left">
+      <form
+          name="formData"
+          (submit)="calculate()"
+          #formData = "ngForm">
+          <p>
+              GitHub Username:
+          </p>
+          <input
+            type="text"
+            name="username"
+            placeholder="github_username"
+            required
+            [(ngModel)]="username">
+                <hr>
+                <button
+                    class="button"
+                    [disabled]="!formData.valid">
+                        Calculate Github Score
+                </button>
+        </form>
+  </div>
+  <div
+    class="right"
+    *ngIf="userExists === true">
+        <h2>
+            {{ score }}
+        </h2>
+        <h3 class = "red" *ngIf="score < 20">
+            "Needs work!"
+        </h3>
+        <h3 class = "orange" *ngIf="score >= 20 && score < 50">
+            "A decent start!"
+        </h3>
+        <h3 class= "black" *ngIf="score >= 50 && score < 100">
+            "Doing good!"
+        </h3>
+        <h3 class = "green" *ngIf="score >= 100 && score < 200">
+            "Great job!"
+        </h3>
+        <h3 class= "blue" *ngIf="score >= 200">
+            "GitHub ELITE!"
+        </h3>
+        <div class="noUser" *ngIf="userExists === false">
+            <h4>User not found. Try again.</h4>
+        </div>
+    </div>
+</div>
